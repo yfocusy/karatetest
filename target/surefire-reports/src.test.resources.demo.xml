@@ -1,0 +1,29 @@
+<testsuite failures="0" name="src/test/resources/demo.feature" skipped="0" tests="3" time="0.350962">
+  <testcase classname="src.test.resources.demo" name="Testing valid GET endpoint" time="0.273979">
+    <system-out>Given url 'http://localhost:8088/user/get' ................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.demo" name="Testing the exact response of a GET endpoint" time="0.060732">
+    <system-out>Given url 'http://localhost:8088/user/get' ................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Given url 'http://localhost:8088/user/get' ................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match $ == {id:"user1", name:"Anna"} .................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.resources.demo" name="Testing that GET response contains specific field" time="0.01625">
+    <system-out>Given url 'http://localhost:8088/user/get' ................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+Given url 'http://localhost:8088/user/get' ................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match $ == {id:"user1", name:"Anna"} .................................. passed
+Given url 'http://localhost:8088/user/get' ................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match $ contains {id:"user1"} ......................................... passed</system-out>
+  </testcase>
+</testsuite>

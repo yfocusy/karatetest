@@ -1,0 +1,67 @@
+12:35:42.994 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:35:43.207 request:
+1 > GET http://localhost:8088/user/get
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8088
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_241)
+
+12:35:43.249 response time in milliseconds: 39.06
+1 < 200
+1 < Content-Type: application/json
+1 < Server: Jetty(9.2.z-SNAPSHOT)
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding, User-Agent
+{ "id": "user1", "name": "Anna" }
+
+12:35:43.286 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:35:43.287 request:
+1 > GET http://localhost:8088/user/get
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8088
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_241)
+
+12:35:43.299 response time in milliseconds: 11.08
+1 < 200
+1 < Content-Type: application/json
+1 < Server: Jetty(9.2.z-SNAPSHOT)
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding, User-Agent
+{ "id": "user1", "name": "Anna" }
+
+12:35:43.355 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:35:43.357 request:
+1 > GET http://localhost:8088/user/get
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8088
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_241)
+
+12:35:43.368 response time in milliseconds: 10.64
+1 < 200
+1 < Content-Type: application/json
+1 < Server: Jetty(9.2.z-SNAPSHOT)
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding, User-Agent
+{ "id": "user1", "name": "Anna" }
+
+hn Smith" }
+
+12:29:20.585 request:
+1 > GET http://localhost:8088/user/get
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8088
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_241)
+
+12:29:20.593 response time in milliseconds: 5.36
+1 < 200
+1 < Content-Type: application/json
+1 < Server: Jetty(9.2.z-SNAPSHOT)
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding, User-Agent
+{ "id": "1234", name: "John Smith" }
+
+12:29:20.594 json parsing failed, response data type set to string: net.minidev.json.parser.ParseException: Unexpected token name at position 20.
+12:29:20.594 assertion failed: path: $, actual: '{ "id": "1234", name: "John Smith" }', expected: '{"id":"1234"}', reason: not a sub-string
