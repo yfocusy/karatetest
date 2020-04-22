@@ -1,4 +1,4 @@
-Feature: Learn How to use Karate for testing.
+Feature: Karate for API testing.
 
   Scenario: Testing valid GET endpoint
 
